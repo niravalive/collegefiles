@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access</title>
+    <link rel="icon" type="image/png" href="./n-solid-full.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="login-container" id="login-container">
+        <form id="login-form" class="login-form">
+            <h2>> Access Terminal</h2>
+            <p class="subtext">_Enter security passcode to proceed</p>
+            <div class="input-group">
+                <input type="password" id="passcode" required maxlength="4" inputmode="numeric" pattern="\d{4}" autocomplete="off">
+                <label for="passcode">PASSCODE</label>
+            </div>
+            <div id="warning-message" class="warning hidden">
+                <p>> ACCESS DENIED: INVALID PASSCODE</p>
+            </div>
+            <button type="submit" class="login-button">Authenticate</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -84,7 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (passcode === '6969') {
             console.log('Access Granted. Redirecting...');
             window.location.href = 'https://drive.google.com/drive/folders/1Uuazn8N078BbvzzzwiXWCltozrZmnHiB?dmr=1&ec=wgc-drive-globalnav-goto';
-        } else {
+        }
+        else if (passcode === '5115') {
+            console.log('Exclusive Access. Redirecting...');
+            window.location.href = 'https://drive.google.com/drive/folders/1A1B5d-T4Dzbqhqi6FwGcEsyBiJzwKHx5?dmr=1&ec=wgc-drive-globalnav-goto';
+        }
+        else {
             console.log('Access Denied.');
             warningMessage.classList.remove('hidden'); // Make it take space
             warningMessage.classList.add('visible');   // Make it visible

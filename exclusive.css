@@ -1,0 +1,23 @@
+/* Styling for the back link */
+.back-link {
+    position: absolute;
+    bottom: 1.875rem; /* 30px */
+    font-size: 0.875rem; /* 14px */
+    color: #00FF00;
+    text-decoration: none;
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #00FF00;
+    z-index: 10;
+}
+
+.back-link:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+/* Input fields ko normal text jaisa banana */
+#userid, #userpass {
+    text-align: left;
+    letter-spacing: normal;
+}

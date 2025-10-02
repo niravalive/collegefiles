@@ -101,5 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 loginContainer.classList.remove('shake');
             }, 1500);
         }
+        
     });
+    // --- Exclusive Users Button Logic ---
+const exclusiveBtn = document.getElementById('exclusive-users-btn');
+
+exclusiveBtn.addEventListener('click', () => {
+    // Ab yeh naye exclusive_login.html page par bhej dega
+    window.location.href = 'exclusive_login.html';
+});
 });
